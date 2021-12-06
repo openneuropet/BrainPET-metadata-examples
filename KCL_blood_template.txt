@@ -1,0 +1,55 @@
+########################################
+# Plasma - discrete                    #
+########################################
+Plasma.freefraction = 0.398619
+Plasma.Data.decayCorrected = true
+Plasma.Data.decayCorrectionTime = 11:10:40
+Plasma.Data.type = radioactivity
+Plasma.Data.labels = {sampleStartTime,sampleDuration,activity}
+Plasma.Data.units = {s,s,kBq/ml}
+Plasma.Data.values = 
+[300            33      3.551469
+5400             34      1.6369825]
+
+########################################
+# Metabolite                           #
+########################################
+Metabolite.Data.type = plasmaParentFraction
+Metabolite.Data.labels = {sampleStartTime,sampleDuration,parentFraction}
+Metabolite.Data.units = {s,s,fraction}
+Metabolite.Data.values = 
+[300            33      0.947932
+5400             34     0.22584122]
+
+########################################
+# Blood - discrete                     #
+########################################
+Blood.Discrete.haematocrit = NaN
+Blood.Discrete.bloodDensity = NaN
+Blood.Discrete.bloodDensityUnits = g/ml
+Blood.Discrete.Data.decayCorrected = true
+Blood.Discrete.Data.decayCorrectionTime = 11:10:40
+Blood.Discrete.Data.type = radioactivity
+Blood.Discrete.Data.labels = {sampleStartTime,sampleDuration,activity}
+Blood.Discrete.Data.units = {s,s,kBq/ml}
+Blood.Discrete.Data.values = 
+[300            33      4.549962
+5400             34       1.487534]
+
+########################################
+# Blood - continuous                   #
+########################################
+Blood.Continuous.withdrawalRate = NaN
+Blood.Continuous.withdrawalRateUnits = ml/min
+Blood.Continuous.tubingType = ""
+Blood.Continuous.tubingLength = NaN
+Blood.Continuous.tubingLengthUnits = mm
+Blood.Continuous.Data.decayCorrected = true
+Blood.Continuous.Data.decayCorrectionTime = scan start
+Blood.Continuous.Data.type = radioactivity
+Blood.Continuous.Data.labels = {time,activity}
+Blood.Continuous.Data.units = {s,~kBq/ml}
+Blood.Continuous.Data.values = 
+[0     0.20161
+900      1.681007]
+
